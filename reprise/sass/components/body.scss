@@ -1,0 +1,10 @@
+body{
+    font-family: $roboto;
+    background: $background;
+    padding:50px 150px;
+    box-sizing:border-box;
+
+    @media screen and (max-width:1000px){
+        padding:30px;
+    }
+}
