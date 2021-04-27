@@ -1,0 +1,21 @@
+.concept, 
+.collections{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+
+    article{
+        width:50%;
+
+        img{
+            width:100%;
+        }
+
+        &:last-child{
+            background:$white;
+            padding:60px 50px;
+            box-sizing:border-box;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+h1{
+    color:$dark;
+    font-family:$title;
+    font-size:$XL;
+    text-align:center;
+}
+
+h2{
+    color:$dark;
+    font-family:$text;
+    font-size:$S;
+    text-align:center;
+    font-weight:300;
+}
+
+h3{
+    color:$light;
+    font-family:$title;
+    font-size:$L;
+}
+
+p{
+    color:$dark;
+    font-family:$text;
+    font-size:$S;
+    margin:20px 0 0 0;
+}

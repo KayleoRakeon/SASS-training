@@ -1,0 +1,8 @@
+.collections{
+    flex-direction:row-reverse;
+
+    article:last-child{
+        transform:translateX(50px);
+        text-align:right;
+    }
+}

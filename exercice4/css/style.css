@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  color: #333;
+  font-family: "Amatic SC", cursive;
+  font-size: 100px;
+  text-align: center; }
+
+h2 {
+  color: #333;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300; }
+
+h3 {
+  color: #f2bf97;
+  font-family: "Amatic SC", cursive;
+  font-size: 40px; }
+
+p {
+  color: #333;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  margin: 20px 0 0 0; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .header::before {
+    content: '';
+    border: solid 15px #fff;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    right: 30px;
+    bottom: 30px; }
+
+.concept,
+.collections {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+  .concept article,
+  .collections article {
+    width: 50%; }
+    .concept article img,
+    .collections article img {
+      width: 100%; }
+    .concept article:last-child,
+    .collections article:last-child {
+      background: #fff;
+      padding: 60px 50px;
+      box-sizing: border-box; }
+
+.concept article:last-child {
+  transform: translateX(-50px); }
+
+.collections {
+  flex-direction: row-reverse; }
+  .collections article:last-child {
+    transform: translateX(50px);
+    text-align: right; }
