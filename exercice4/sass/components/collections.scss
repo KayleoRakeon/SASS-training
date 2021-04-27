@@ -4,5 +4,14 @@
     article:last-child{
         transform:translateX(50px);
         text-align:right;
+
+        @media (max-width:$tablet){
+            transform:translateX(-50px);
+            text-align:left;
+        }
+    }
+
+    @media (max-width:$tablet){
+        flex-direction:column-reverse;
     }
 }

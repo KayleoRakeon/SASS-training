@@ -64,6 +64,15 @@ p {
       background: #fff;
       padding: 60px 50px;
       box-sizing: border-box; }
+    @media (max-width: 1000px) {
+      .concept article,
+      .collections article {
+        width: 65%; } }
+  @media (max-width: 1000px) {
+    .concept,
+    .collections {
+      height: auto;
+      flex-direction: column-reverse; } }
 
 .concept article:last-child {
   transform: translateX(-50px); }
@@ -73,3 +82,10 @@ p {
   .collections article:last-child {
     transform: translateX(50px);
     text-align: right; }
+    @media (max-width: 1000px) {
+      .collections article:last-child {
+        transform: translateX(-50px);
+        text-align: left; } }
+  @media (max-width: 1000px) {
+    .collections {
+      flex-direction: column-reverse; } }
