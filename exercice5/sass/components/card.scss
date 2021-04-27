@@ -1,0 +1,36 @@
+section{
+    width:calc(25% - 20px);
+    height:auto;
+    margin:10px;
+
+    article{
+        width:100%;
+
+        &:first-child{
+            position:relative;
+
+            img{
+                width:100%;
+            }
+        }
+
+        button{
+            position:absolute;
+            right:$m1;
+            bottom:-5px;
+            padding:$m0 $m2;
+            box-sizing:border-box;
+            background:$red;
+            border:none;
+            z-index:2;
+        }
+
+        &:last-child{
+            background:$white;
+            padding:$m3 $m2;
+            box-sizing:border-box;
+            transform:translateY(-3px);
+            z-index:0;
+        }
+    }
+}
