@@ -7,6 +7,7 @@ header{
     left:0;
     @extend %flex;
     align-items:center;
+    z-index:10;
 
     div{
         width:100%;
@@ -15,18 +16,43 @@ header{
         justify-content:space-between;
         align-items:center;
 
+        img{
+            @media (max-width:$mobile){
+                margin:0 auto $m2 auto;
+            }
+        }
+
         nav{
             ul{
                 li{
                     display:inline-block;
                     margin: 0 0 0 $m4;
+
+                    @media (max-width:$mobile){
+                        margin:0 $m2;
+                    }
                 }
+
+                @media (max-width:$mobile){
+                    display:flex;
+                    justify-content:center;
+                }
+            }
+
+            @media (max-width:$mobile){
+                width:100%;
             }
         }
     }
 
     @media (max-width:$tablet){
         padding:0 $m4;
+        box-sizing:border-box;
+    }
+
+    @media (max-width:$mobile){
+        height:auto;
+        padding:$m1 0 $m2 0;
         box-sizing:border-box;
     }
 }

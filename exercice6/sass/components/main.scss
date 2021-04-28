@@ -27,6 +27,10 @@ main{
                         padding:0 $m4;
                         box-sizing:border-box;
                     }
+
+                    @media (max-width:$mobile){
+                        padding:0 $m2;
+                    }
                 }
             }
         }
@@ -34,5 +38,9 @@ main{
         &:first-child{
             margin:0 0 $m5 0;
         }
+    }
+
+    @media (max-width:$mobile){
+        padding:$m5 0 $m4 0;
     }
 }

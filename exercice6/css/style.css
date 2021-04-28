@@ -96,17 +96,36 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  align-items: center; }
+  align-items: center;
+  z-index: 10; }
   header div {
     width: 100%;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 700px) {
+      header div img {
+        margin: 0 auto 20px auto; } }
     header div nav ul li {
       display: inline-block;
       margin: 0 0 0 50px; }
+      @media (max-width: 700px) {
+        header div nav ul li {
+          margin: 0 20px; } }
+    @media (max-width: 700px) {
+      header div nav ul {
+        display: flex;
+        justify-content: center; } }
+    @media (max-width: 700px) {
+      header div nav {
+        width: 100%; } }
   @media (max-width: 1000px) {
     header {
       padding: 0 50px;
+      box-sizing: border-box; } }
+  @media (max-width: 700px) {
+    header {
+      height: auto;
+      padding: 10px 0 20px 0;
       box-sizing: border-box; } }
 
 main {
@@ -129,8 +148,14 @@ main {
             width: 100%;
             padding: 0 50px;
             box-sizing: border-box; } }
+        @media (max-width: 700px) {
+          main section article:last-child div {
+            padding: 0 20px; } }
     main section:first-child {
       margin: 0 0 100px 0; }
+  @media (max-width: 700px) {
+    main {
+      padding: 100px 0 50px 0; } }
 
 main section article:first-child .info {
   width: 100%;
@@ -168,6 +193,9 @@ footer {
       margin: 50px 0 0 0; }
       footer section article img {
         height: 100%; }
+        @media (max-width: 700px) {
+          footer section article img {
+            display: none; } }
       footer section article:last-child {
         background: white;
         padding: 60px 50px;
@@ -175,5 +203,9 @@ footer {
         @media (max-width: 1000px) {
           footer section article:last-child {
             padding: 30px 20px; } }
+      @media (max-width: 700px) {
+        footer section article {
+          width: 100%;
+          margin: 30px 0 0 0; } }
     footer section.discover {
       flex-direction: row-reverse; }
