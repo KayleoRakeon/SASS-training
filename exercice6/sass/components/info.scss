@@ -1,0 +1,36 @@
+main{
+    section{
+        article{
+            &:first-child{
+                .info{
+                    width:100%;
+                    @extend %flex;
+                    justify-content:center;
+                    align-items:center;
+                    margin:$m2 0 $m4 0;
+    
+                    .auteur{
+                        margin:0 $m4;
+                        position:relative;
+
+                        &::before{
+                            content:"-";
+                            position:absolute;
+                            top:0;
+                            left:-25px;
+                            transform:translateX(-50%);
+                        }
+
+                        &::after{
+                            content:"-";
+                            position:absolute;
+                            top:0;
+                            right:-25px;
+                            transform:translateX(50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

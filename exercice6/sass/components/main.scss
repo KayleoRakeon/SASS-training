@@ -1,0 +1,32 @@
+main{
+    @extend %center;
+
+    padding:$m4 0;
+    box-sizing:border-box;
+
+    section{
+        width:100%;
+        height:auto;
+    
+        article{
+            width:100%;
+            height:auto;
+
+            &:last-child{
+                img{
+                    width:100%;
+                    margin:0 0 $m1 0;
+                }
+
+                div{
+                    width:60%;
+                    margin:auto;
+                }
+            }
+        }
+
+        &:first-child{
+            margin:0 0 $m5 0;
+        }
+    }
+}

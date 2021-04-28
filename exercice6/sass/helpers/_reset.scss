@@ -4,7 +4,11 @@
 }
 
 body{
+    width:100vw;
+    height:auto;
     font-family:$font;
+    padding:70px 0 0 0;
+    box-sizing:border-box;
 }
 
 ul{

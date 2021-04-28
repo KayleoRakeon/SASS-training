@@ -1,0 +1,33 @@
+footer{
+    background:$light;
+    padding:0 0 $m4 0;
+    box-sizing:border-box;
+    width:100%;
+
+    section{
+        @extend %center;
+        @extend %flex;
+        align-items:stretch;
+        justify-content:center;
+        height:auto;
+
+        article{
+            width:50%;
+            margin:$m4 0 0 0;
+
+            img{
+                height:100%;
+            }
+
+            &:last-child{
+                background:white;
+                padding:60px $m4;
+                box-sizing:border-box;
+            }
+        }
+
+        &.discover{
+            flex-direction:row-reverse;
+        }
+    }
+}
