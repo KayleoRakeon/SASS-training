@@ -3,6 +3,11 @@ li{
     font-weight:$bold;
     font-size:$S;
     letter-spacing:1px;
+    cursor:pointer;
+
+    &:hover{
+        text-decoration:underline;
+    }
 }
 
 h1,
@@ -47,7 +52,7 @@ p.sub{
 button{
     display:block;
     background:$green;
-    padding:$m2 $m3;
+    padding:15px $m3;
     box-sizing:border-box;
     font-size:$M;
     color:white;
@@ -55,4 +60,11 @@ button{
     letter-spacing:1.5px;
     border:none;
     margin:$m4 auto 0 auto;
+    border:solid 2px $green;
+    cursor:pointer;
+
+    &:hover{
+        background:$white;
+        color:$green;
+    }
 }
