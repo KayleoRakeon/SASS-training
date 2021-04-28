@@ -10,6 +10,7 @@ footer{
         align-items:stretch;
         justify-content:center;
         height:auto;
+        overflow-x:hidden;
 
         article{
             width:50%;
@@ -23,6 +24,10 @@ footer{
                 background:white;
                 padding:60px $m4;
                 box-sizing:border-box;
+
+                @media (max-width:$tablet){
+                    padding:$m3 $m2;
+                }
             }
         }
 

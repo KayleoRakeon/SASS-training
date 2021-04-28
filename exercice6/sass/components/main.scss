@@ -21,6 +21,12 @@ main{
                 div{
                     width:60%;
                     margin:auto;
+
+                    @media (max-width:$tablet){
+                        width:100%;
+                        padding:0 $m4;
+                        box-sizing:border-box;
+                    }
                 }
             }
         }

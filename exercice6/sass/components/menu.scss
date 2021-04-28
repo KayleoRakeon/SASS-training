@@ -24,4 +24,9 @@ header{
             }
         }
     }
+
+    @media (max-width:$tablet){
+        padding:0 $m4;
+        box-sizing:border-box;
+    }
 }
