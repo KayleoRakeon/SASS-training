@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAC;EACG,OAAO,EAAC,CAAC;EACT,MAAM,EAAC,CAAC;;AAGZ,GAAG;EACC,SAAS,EAAC,IAAI;EACd,OAAO,EAAC,KAAK",
+"sources": ["../../../../3e%20ann%C3%A9e/SASS/exercice7/sass/helpers/_reset.scss"],
+"names": [],
+"file": "style.css"
+}
