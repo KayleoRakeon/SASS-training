@@ -13,17 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="grey">
 
     <h1>Mon tableau de bord</h1>
 
     <main>
         <h2>To do</h2>
 
-        <section class="design">
+        <section class="design grey">
             <div>
                 <h3>Design</h3>
-                <img src="img/trois-points.png" alt="Pictogramme de trois points alignés les uns au dessus des autres">
+                <img src="img/trois-points.png" alt="Pictogramme de trois points alignés les uns au dessus des autres"
+                    class="picto">
             </div>
 
             <article>
@@ -33,7 +34,8 @@
                     <p class="task">Faire un carré</p>
                     <div>
                         <p class="date green">16 Juin</p>
-                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut">
+                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut"
+                            class="picto profil">
                     </div>
                 </div>
             </article>
@@ -45,21 +47,23 @@
                     <p class="task">Faire un rond :)</p>
                     <div>
                         <p class="date green">18 Juin</p>
-                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut">
+                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut"
+                            class="picto profil">
                     </div>
                 </div>
             </article>
 
             <div class="button">
-                <img src="img/plus.png" alt="Pictogramme du symbole mathématique plus">
+                <img src="img/plus.png" alt="Pictogramme du symbole mathématique plus" class="picto">
                 <p>Ajouter une tâche</p>
             </div>
         </section>
 
-        <section class="dev">
+        <section class="dev grey">
             <div>
                 <h3>Développement</h3>
-                <img src="img/trois-points.png" alt="Pictogramme de trois points alignés les uns au dessus des autres">
+                <img src="img/trois-points.png" alt="Pictogramme de trois points alignés les uns au dessus des autres"
+                    class="picto">
             </div>
 
             <article>
@@ -69,7 +73,8 @@
                     <p class="task">Taper sur un clavier</p>
                     <div>
                         <p class="date red">3 Juin</p>
-                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut">
+                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut"
+                            class="picto profil">
                     </div>
                 </div>
             </article>
@@ -81,21 +86,23 @@
                     <p class="task">Recommencer les yeux fermés</p>
                     <div>
                         <p class="date green">22 Juin</p>
-                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut">
+                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut"
+                            class="picto profil">
                     </div>
                 </div>
             </article>
 
             <div class="button">
-                <img src="img/plus.png" alt="Pictogramme du symbole mathématique plus">
+                <img src="img/plus.png" alt="Pictogramme du symbole mathématique plus" class="picto">
                 <p>Ajouter une tâche</p>
             </div>
         </section>
 
-        <section class="marketing">
+        <section class="marketing grey">
             <div>
                 <h3>Marketing</h3>
-                <img src="img/trois-points.png" alt="Pictogramme de trois points alignés les uns au dessus des autres">
+                <img src="img/trois-points.png" alt="Pictogramme de trois points alignés les uns au dessus des autres"
+                    class="picto">
             </div>
 
             <article>
@@ -105,15 +112,83 @@
                     <p class="task">Bla bla bla</p>
                     <div>
                         <p class="date green">29 Juin</p>
-                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut">
+                        <img src="img/utilisateur.png" alt="Pictogramme d'un profil utilisateur par défaut"
+                            class="picto profil">
                     </div>
                 </div>
             </article>
 
             <div class="button">
-                <img src="img/plus.png" alt="Pictogramme du symbole mathématique plus">
+                <img src="img/plus.png" alt="Pictogramme du symbole mathématique plus" class="picto">
                 <p>Ajouter une tâche</p>
             </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <div class="planning-head">
+            <h4>Planning</h4>
+            <div class="legende">
+                <p class="l l-dev">Dev</p>
+                <p class="l l-design">Design</p>
+                <p class="l l-marketing">Marketing</p>
+            </div>
+        </div>
+
+        <section class="planning">
+            <article class="row row-1">
+                <div class="tache t-dev">
+                    <div>
+                        <p class="date red">3 Juin</p>
+                        <p class="task">Taper sur son clavier</p>
+                    </div>
+                    <p class="statut late">en retard</p>
+                </div>
+
+                <div class="tache t-design">
+                    <div>
+                        <p class="date green">16 Juin</p>
+                        <p class="task">Faire un carré</p>
+                    </div>
+                    <p class="statut">en cours</p>
+                </div>
+            </article>
+
+            <article class="row row-2">
+                <div class="tache t-design">
+                    <div>
+                        <p class="date green">18 Juin</p>
+                        <p class="task">Taper sur son clavier</p>
+                    </div>
+                    <p class="statut">à venir</p>
+                </div>
+
+                <div class="tache t-dev">
+                    <div>
+                        <p class="date green">22 Juin</p>
+                        <p class="task">Recommencer les yeux fermés</p>
+                    </div>
+                    <p class="statut">à venir</p>
+                </div>
+
+                <div class="tache t-marketing">
+                    <div>
+                        <p class="date green">29 Juin</p>
+                        <p class="task">Bla bla bla</p>
+                    </div>
+                    <p class="statut">à venir</p>
+                </div>
+            </article>
+
+            <article class="row row-3">
+                <div class="tache none">
+                    <div>
+                        <p class="date green">30 juin - 7 juillet</p>
+                        <p class="task">Formation : faire un triangle :o</p>
+                    </div>
+                    <p class="statut">à venir</p>
+                </div>
+            </article>
         </section>
 
     </main>

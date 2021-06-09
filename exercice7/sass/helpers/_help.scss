@@ -2,3 +2,30 @@
     display:flex;
     flex-wrap:wrap;
 }
+
+%border{
+    border:solid 1px $border;
+    border-radius:$radius;
+}
+
+.green{
+    background:$green;
+}
+.red{
+    background:$red;
+}
+.grey{
+    background:$background;
+}
+
+.clear{
+    clear:both;
+}
+
+.picto{
+    width:15px;
+}
+
+.profil{
+    width:30px;
+}

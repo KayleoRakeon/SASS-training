@@ -1,0 +1,46 @@
+section.grey{
+    width:calc((100% / 3) - (50px / 3));
+    height:100%;
+    float:left;
+    padding:$m3;
+    margin:0 $m1 $m5 $m1;
+    box-sizing:border-box;
+    @extend %border;
+
+    &>div{
+        @extend %flex;
+        justify-content:space-between;
+        align-items:center;
+        margin: 0 0 $m3 0;
+    }
+
+    article{
+        @extend %border;
+        margin:0 0 $m2 0;
+        overflow:hidden;
+
+        &>div{
+            background:white;
+            padding:$m2;
+            box-sizing:border-box;
+
+            &>div{
+                @extend %flex;
+                align-items:center;
+                justify-content:space-between;
+                margin: $m2 0 0 0;
+            }
+        }
+    }
+
+    .button{
+        width:100%;
+        background:white;
+        @extend %border;
+        @extend %flex;
+        align-items:center;
+        justify-content:center;
+        padding:$m3 0;
+        box-sizing:border-box;
+    }
+}

@@ -1,0 +1,91 @@
+.planning-head{
+    width:100%;
+    height:auto;
+    @extend %flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0 0 $m2 0;
+
+    .legende{
+        @extend %flex;
+        flex-direction:flex-end;
+        align-items:center;
+    }
+}
+
+section.planning{
+    width:100%;
+    height:auto;
+    @extend %flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    article.row{
+        width:100%;
+        @extend %flex;
+        justify-content:flex-start;
+        align-items:center;
+        background:$background;
+
+        div.tache{
+            height:auto;
+            @extend %flex;
+            justify-content:space-between;
+            align-items:flex-end;
+            @extend %border;
+            padding:$m4;
+            box-sizing:border-box;
+            position:relative;
+
+            p.date{
+                margin:0 0 $m1 0;
+            }
+
+            &::after{
+                content:'';
+                width:100%;
+                height:5px;
+                position:absolute;
+                left:0;
+                bottom:0;
+            }
+            &.t-dev::after{
+                background:$dev;
+            }
+            &.t-design::after{
+                background:$design;
+            }
+            &.t-marketing::after{
+                background:$marketing;
+            }
+
+            &.none::after{
+                display:none;
+            }
+        }
+
+        &.row-1{
+            div.tache{
+                &:first-child{
+                    width:60%;
+                }
+                &:last-child{
+                    width:40%;
+                }
+            }
+        }
+
+        &.row-2{
+            div.tache{
+                width:calc(100% / 3);
+            }
+        }
+
+        &.row-3{
+            div.tache{
+                width:100%;
+            }
+        }
+    }
+}

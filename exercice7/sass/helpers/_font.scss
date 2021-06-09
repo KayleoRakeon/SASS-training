@@ -1,16 +1,23 @@
 h1,
 h2,
-h3{
+h3,
+h4{
     font-weight:$bold;
     color:$title;
 }
 
 h1{
     font-size:$L;
+    margin:0 0 $m3 0;
 }
 h2,
-h3{
+h3,
+h4{
     font-size:$M;
+}
+h2,
+h4{
+    margin:0 0 $m2 0;
 }
 
 p.task{
@@ -20,7 +27,52 @@ p.task{
 p.date{
     text-transform:uppercase;
     color:$background;
+    padding:$m1 $m2;
+    box-sizing:border-box;
+    border-radius:$radius;
+    display:inline-block;
 }
 .button p{
     color:$grey;
+    margin:0 0 0 $m2;
+}
+
+p.l{
+    font-family:$font;
+    font-size:$S;
+    font-weight:$regular;
+    color:$title;
+    margin:0 0 0 $m5;
+    position:relative;
+
+    &::before{
+        content:'';
+        position:absolute;
+        left:-20px;
+        top:calc(50% - 4px);
+        width:8px;
+        height:8px;
+        border-radius:100%;
+    }
+
+    &.l-dev::before{
+        background:$dev;
+    }
+    &.l-design::before{
+        background:$design;
+    }
+    &.l-marketing::before{
+        background:$marketing;
+    }
+}
+
+p.statut{
+    text-transform:uppercase;
+    font-size:$S;
+    color:$picto;
+    font-weight:$regular;
+
+    &.late{
+        color:$red;
+    }
 }

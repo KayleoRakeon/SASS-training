@@ -1,15 +1,22 @@
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 600;
   color: #011f3f; }
 
 h1 {
-  font-size: 28px; }
+  font-size: 28px;
+  margin: 0 0 15px 0; }
 
 h2,
-h3 {
+h3,
+h4 {
   font-size: 20px; }
+
+h2,
+h4 {
+  margin: 0 0 10px 0; }
 
 p.task {
   font-weight: 600;
@@ -17,10 +24,45 @@ p.task {
 
 p.date {
   text-transform: uppercase;
-  color: #fafbfc; }
+  color: #fafbfc;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: inline-block; }
 
 .button p {
-  color: #777f88; }
+  color: #777f88;
+  margin: 0 0 0 10px; }
+
+p.l {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #011f3f;
+  margin: 0 0 0 50px;
+  position: relative; }
+  p.l::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%; }
+  p.l.l-dev::before {
+    background: #FF8764; }
+  p.l.l-design::before {
+    background: #96E3DB; }
+  p.l.l-marketing::before {
+    background: #003567; }
+
+p.statut {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #d1dbe2;
+  font-weight: 400; }
+  p.statut.late {
+    color: #e82936; }
 
 * {
   padding: 0;
@@ -31,6 +73,132 @@ img {
   display: block; }
 
 body {
+  width: 100%;
+  height: 100vh;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 50px;
+  box-sizing: border-box; }
+
+section.grey > div, section.grey article > div > div, section.grey .button, .planning-head, .planning-head .legende, section.planning, section.planning article.row, section.planning article.row div.tache {
+  display: flex;
+  flex-wrap: wrap; }
+
+main, section.grey, section.grey article, section.grey .button, section.planning article.row div.tache {
+  border: solid 1px #f0f3f4;
+  border-radius: 4px; }
+
+.green {
+  background: #4ccf81; }
+
+.red {
+  background: #e82936; }
+
+.grey {
+  background: #fafbfc; }
+
+.clear {
+  clear: both; }
+
+.picto {
+  width: 15px; }
+
+.profil {
+  width: 30px; }
+
+main {
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 25px 50px 50px 50px;
+  box-sizing: border-box; }
+
+section.grey {
+  width: calc((100% / 3) - (50px / 3));
+  height: 100%;
+  float: left;
+  padding: 15px;
+  margin: 0 5px 50px 5px;
+  box-sizing: border-box; }
+  section.grey > div {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px 0; }
+  section.grey article {
+    margin: 0 0 10px 0;
+    overflow: hidden; }
+    section.grey article > div {
+      background: white;
+      padding: 10px;
+      box-sizing: border-box; }
+      section.grey article > div > div {
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0 0 0; }
+  section.grey .button {
+    width: 100%;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    box-sizing: border-box; }
+
+.dev {
+  margin: 0 25px; }
+
+.planning-head {
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0; }
+  .planning-head .legende {
+    flex-direction: flex-end;
+    align-items: center; }
+
+section.planning {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  section.planning article.row {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fafbfc; }
+    section.planning article.row div.tache {
+      height: auto;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 25px;
+      box-sizing: border-box;
+      position: relative; }
+      section.planning article.row div.tache p.date {
+        margin: 0 0 5px 0; }
+      section.planning article.row div.tache::after {
+        content: '';
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+      section.planning article.row div.tache.t-dev::after {
+        background: #FF8764; }
+      section.planning article.row div.tache.t-design::after {
+        background: #96E3DB; }
+      section.planning article.row div.tache.t-marketing::after {
+        background: #003567; }
+      section.planning article.row div.tache.none::after {
+        display: none; }
+    section.planning article.row.row-1 div.tache:first-child {
+      width: 60%; }
+    section.planning article.row.row-1 div.tache:last-child {
+      width: 40%; }
+    section.planning article.row.row-2 div.tache {
+      width: calc(100% / 3); }
+    section.planning article.row.row-3 div.tache {
+      width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
